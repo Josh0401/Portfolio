@@ -6,11 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Iyoha | Portfolio</title>
+    <link rel="shortcut icon" type="images" href="images/icon3.png">
 
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <!--custom css-->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const typed = new Typed('.multiple-text', {
+                strings: ['Frontend Developer', 'Graphic Designer'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true
+            });
+        });
+    </script>
 </head>
 
 
@@ -43,7 +58,7 @@
             <a href="https://www.behance.net/joshuaiyoha" target="_blank"><i class='bx bxl-behance'></i></a>
             <a href="https://github.com/Josh0401" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
-         <a href="Joshua Oseghale Iyoha.pdf" class="btn">Download CV</a>
+         <a href="JOSHUA IYOHA - CV.pdf" class="btn">Download CV</a>
     </div>
 
     <div class="home-img">
@@ -110,47 +125,47 @@
 
     <div class="projects-container">
         <div class="projects-box">
-            <img src="images/project-img-6.jpg" alt="">
+            <img src="images/e-commerce1.PNG" alt="">
             <div class="projects-layer">
                 <h4>Web Design</h4>
-                <p>Simple Portfolio webpage with responsiveness and functionality.</p>
-                <a href="https://github.com/Josh0401/Portfolio.git" target="_blank"><i class='bx bx-link-external' ></i></a>
+                <p>Agroease E-commerce Website</p>
+                <a href="https://agroease.trade" target="_blank"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
 
         <div class="projects-box">
-            <img src="images/project-img-1.jpg" alt="">
+            <img src="images/agro-website1.PNG" alt="">
             <div class="projects-layer">
                 <h4>Web Design</h4>
-               <p>My very first webpage design. A portfolio of my favourite actor!!</p>
-                <a href="https://github.com/Josh0401/Celeb-Portfolio.git" target="_blank"><i class='bx bx-link-external' ></i></a>
+                <p>Agroease Landing Page</p>
+                <a href="https://agroease.ng" target="_blank"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
 
         <div class="projects-box">
-            <img src="images/project-img-2.jpg" alt="">
+            <img src="images/design1.PNG" alt="">
             <div class="projects-layer">
-                <h4>Graphic Design</h4>
-                <p>Give your brand an identity. Check out this mockup design!</p>
-                <a href="https://www.instagram.com/reel/CsLWMDJggG8/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg==" target="_blank"><i class='bx bx-link-external' ></i></a>
+                <h4>Web Development</h4>
+                <p>Give your brand an identity. Check out this Architect's Website!</p>
+                <a href="https://aondesignstudios.com" target="_blank"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
 
         <div class="projects-box">
-            <img src="images/project-img-3.jpg" alt="">
+            <img src="images/Screenshot (60).png" alt="">
             <div class="projects-layer">
-                <h4>Graphic Design</h4>
-                <p>'Tis the season of love!! Check out this valentine's day design. </p>
-                <a href="https://www.instagram.com/p/CphzcqpNbBE/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg==" target="_blank"><i class='bx bx-link-external' ></i></a>
+                <h4>Web Development</h4>
+                <p>Starserv Info Page</p>
+                <a href="https://www.starservagro.com/" target="_blank"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
 
         <div class="projects-box">
-            <img src="images/project-img-4.jpg" alt="">
+            <img src="images/Screenshot (61).png" alt="">
             <div class="projects-layer">
-                <h4>UI/UX Design</h4>
-                <p>Need a design on how your website should look? We got you covered..Check this out!</p>
-                <a href="https://www.figma.com/file/iDd4UgONheZP4JmdL53kpb/St-Mary's?type=design&node-id=0-1&t=Z2dfBxrFX52JLAuz-0" target="_blank"><i class='bx bx-link-external' ></i></a>
+                <h4>Web Development</h4>
+                <p>Final Year Project</p>
+                <a href="https://agroconnect-project.vercel.app/market" target="_blank"><i class='bx bx-link-external' ></i></a>
             </div>
         </div>
 
@@ -169,16 +184,16 @@
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#">
+    <form action="https://formsubmit.co/jaysdesigns04@gmail.com" method="POST">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
         </div>
         <div class="input-box">
-            <input type="phonenumber" placeholder="Phone Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="phonenumber" id="number" placeholder="Phone Number" required>
+            <input type="text" id="subject" placeholder="Email Subject" required>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit" value="Send Message" class="btn">
     </form>
 </section>
@@ -186,7 +201,7 @@
 <!-- footer design-->
 <footer class="footer">
     <div class="footer-text">
-    <p>Copyright &copy; 2023 by Joshua Iyoha | All Rights Reserved.</p>
+    <p>Copyright &copy; 2025 by Joshua Iyoha | All Rights Reserved.</p>
 </div>
 
 <div class="footer-iconTop">
@@ -199,9 +214,18 @@
 
 <!--typing-->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const typed = new Typed('.multiple-text', {
+                strings: ['Frontend Developer', 'Graphic Designer'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true
+            });
+        });
+    </script>
 </body>
 
 </html>
